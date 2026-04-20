@@ -46,4 +46,8 @@ public class PhotoPost extends Post
     {
         return caption;
     }
+    public void shortSummary()
+    {
+        System.out.println("this photo was posted by " + getUsername());
+    }
 }
