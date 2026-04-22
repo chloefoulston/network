@@ -20,8 +20,10 @@ public class MessagePost extends Post
      */
     public MessagePost(String author, String text)
     {
+        
         super(author);
         message = text;
+               
     }
 
     /**
@@ -37,5 +39,15 @@ public class MessagePost extends Post
     {
         System.out.println("Message post from " + getUsername());
     }
-    
+        /**
+     * Display the details of this post.
+     * 
+     * (Currently: Print to the text terminal. This is simulating display 
+     * in a web browser for now.)
+     */
+    public void display()
+    {
+        System.out.println(message);
+        super.display();      
+    }
 }

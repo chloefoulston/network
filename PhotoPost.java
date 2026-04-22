@@ -50,4 +50,16 @@ public class PhotoPost extends Post
     {
         System.out.println("this photo was posted by " + getUsername());
     }
+        /**
+     * Display the details of this post.
+     * 
+     * (Currently: Print to the text terminal. This is simulating display 
+     * in a web browser for now.)
+     */
+    public void display()
+    {
+        super.display();
+        System.out.println("  [" + filename + "]");
+        System.out.println("  " + caption);        
+    }
 }
